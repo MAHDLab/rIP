@@ -1,2 +1,2 @@
 # rIP
-This is an R code project for detecting likely responsese from server farms on MTurk surveys. It will eventually be built into a package, but for now is an easy function for use.
+This is an R code project for detecting likely responsese from server farms on MTurk surveys. It will eventually be built into a package, but for now is an easy function for use. Credit to @tylerburleigh for pointing out the utility of iphub.info. His method for incorporating this information into Qualtrics surveys can be found here: https://twitter.com/tylerburleigh/status/1042528912511848448?s=19.
