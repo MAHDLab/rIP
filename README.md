@@ -6,4 +6,4 @@ Especially important is the variable `block`, which gives a score indicating whe
 
 The recommendation from `iphub.info` is to block or exclude those who score `block = 1`.
 
-Credit to @tylerburleigh for pointing out the utility of `iphub.info`. His method for incorporating this information into Qualtrics surveys can be found [here](https://twitter.com/tylerburleigh/status/1042528912511848448?s=19)
+Credit to @tylerburleigh for pointing out the utility of `iphub.info`. His method for incorporating this information into Qualtrics surveys can be found [here](https://twitter.com/tylerburleigh/status/1042528912511848448?s=19).
