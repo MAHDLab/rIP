@@ -8,7 +8,7 @@ getIPinfo <- function(ips, key) {
   pb <- txtProgressBar(min = 0, max = length(ips), style = 3)
   ipDF <- c()
   for (i in 1:length(ips)) {
-    ipInfo <- httr::GET(paste0(url, ips[i]), add_headers(`X-Key` = key))
+    ipInfo <- httr::GET(paste0(url, ips[i]), httr::add_headers(`X-Key` = key))
     infoVector <- unlist(httr::content(ipInfo))
     ipDF <- rbind(ipDF, infoVector)
     setTxtProgressBar(pb, i)
