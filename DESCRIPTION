@@ -1,0 +1,21 @@
+Package: rIP
+Type: Package
+Title: Passes an array of IP addresses to iphub.info and returns a dataframe with details of IP
+Version: 0.1.0
+Authors@R: c(person("Ryan", "Kennedy", role = c("aut", "cre"), email = "rkennedy@uh.edu"),
+             person("Philip", "Waggoner", role = "aut", email = "pdwaggoner@wm.edu"),
+             person("Scott", "Clifford", role = "ctb"))
+Maintainer: Ryan Kennedy <rkennedy@uh.edu>
+Description: Takes as its input an array of IPs and the user's X-Key, passes these to iphub.info, and returns a dataframe with the ip (used for merging), country code, country name, asn, isp, block, and hostname.
+    Especially important in this is the variable "block", which gives a score indicating whether the IP address is likely from a server farm and should be excluded from the data. It is codes 0 if the IP is residential/unclassified (i.e. safe IP), 1 if the IP is non-residential IP (hostping provider, proxy, etc. -- should likely be excluded), and 2 for non-residential and residential IPs (more stringent, may flag innocent respondents).
+    The recommendation from iphub.info is to block or exclude those who score block = 1.
+Imports: httr, utils
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2018-09-28 21:00:38 UTC
+Author: Ryan Kennedy [aut, cre],
+  Philip Waggoner [aut],
+  Scott Clifford [ctb]
