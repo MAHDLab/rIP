@@ -6,4 +6,6 @@ Especially important in this is the variable "block", which gives a score indica
 
 The recommendation from iphub.info is to block or exclude those who score block = 1.
 
+`rIP` requires an API key from <https://iphub.info/api>. Users can register for a free key that allows for up to 1,000 IP inquiries per day.
+
 We thank @tylerburleigh for pointing out the utility of iphub.info. His method for incorporating this information into Qualtrics surveys can be found [here](https://twitter.com/tylerburleigh/status/1042528912511848448?s=19).
