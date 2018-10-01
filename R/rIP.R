@@ -36,8 +36,8 @@ getIPinfo <- function(d, i, key){
     utils::setTxtProgressBar(pb, i)
   }
   close(pb)
-  ipDF <- data.frame(ipDF)
   rownames(ipDF) <- NULL
+  ipDF <- data.frame(ipDF)
 
   return(ipDF)
 }
