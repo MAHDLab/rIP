@@ -52,6 +52,6 @@ The `rIP` package can be installed directly from the source code freely accessib
 
 # Acknowledgements
 
-We thank @tylerburleigh for pointing out the utility of <iphub.info>. His method for incorporating this information into Qualtrics surveys can be found [here](https://twitter.com/tylerburleigh/status/1042528912511848448?s=19).
+We thank @tylerburleigh for pointing out the utility of <https://iphub.info>. His method for incorporating this information into Qualtrics surveys can be found [here](https://twitter.com/tylerburleigh/status/1042528912511848448?s=19).
 
 # References
