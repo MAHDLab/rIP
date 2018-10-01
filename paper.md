@@ -25,16 +25,6 @@ date: 28 June 2018
 bibliography: paper.bib
 ---
 
-`rIP` detects likely responses from server farms on MTurk surveys. 
-
-
-
-
-
-
-
-
-
 # Summary
 
 The use of survey experiments in political and social research is on the rise. Along with this increase of studies leveraging survey experiments ot explain phenomena of interest, is the use of online convenience samples and Amazon's Mechanical Turk (MTurk) specifically. Many recent studies have validated the use of MTurk to address substantive questions of interest in the social sciences (e.g., CITE Clifford et al. and CITE Huff and Tingley). Yet, though validation of MTurk is useful, it has been recently uncovered that several MTurk surveys have been impacted by bots or "server farms", with IP addresses both disguising respondents' true locations as well as multiple survey responses coming from a single IP address (CITE DREYFUSS 2018). The problem has been traced to the use of Virtual Private Servers (VPS) to answer U.S. surveys from abroad (CITE WORKING).
