@@ -45,7 +45,7 @@ data <- read.csv("iphubInfo.csv") # read in data where IP addresses are stored
 getIPinfo(data, "ip", "YOUR X-KEY HERE") # run the function
 ```
 
-The above code will generate the following output (note that a screenshot of the first few observations is included):
+The above code generates the output in Figure 1 (note that a screenshot of the first few observations is included).
 
 ![Sample Output from rIP.](output.png)
 
@@ -53,6 +53,6 @@ The `rIP` package can be installed directly from the source code freely accessib
 
 # Acknowledgements
 
-We thank @tylerburleigh for pointing out the utility of <https://iphub.info>.
+We thank Tyler Burleigh for pointing out the utility of iphub.
 
 # References
