@@ -7,7 +7,7 @@ tags:
   - server farms
   - political science
 authors:
-  - name: Philip D. Waggoner
+  - name: Philip D. Waggoner^[Corresponding Author, pdwaggoner@wm.edu]
     orcid: 0000-0002-7825-7573
     affiliation: "1, 3"
   - name: Ryan Kennedy
