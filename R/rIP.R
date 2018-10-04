@@ -33,6 +33,7 @@ getIPinfo <- function(d, i, key){
     ipInfo <- httr::GET(paste0(url, ips[i]), httr::add_headers(`X-Key` = key))
     infoVector <- unlist(httr::content(ipInfo))
     ipDF <- rbind(ipDF, infoVector)
+    Sys.sleep(0.1)
     utils::setTxtProgressBar(pb, i)
   }
   close(pb)
