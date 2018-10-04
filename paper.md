@@ -51,8 +51,12 @@ The above code generates the output in Figure 1 (note that a screenshot of the f
 
 The `rIP` package can be installed directly from the source code freely accessible at the corresponding GitHub repository along with all package documentation and an issue tracker.
 
+\newpage
+
 # Acknowledgements
 
 We thank Tyler Burleigh for pointing out the utility of iphub. This research is based upon work supported in part by the Office of the Director of National Intelligence (ODNI), Intelligence Advanced Research Projects Activity (IARPA), via 2017-17061500006. The views and conclusions contained herein are those of the authors and should not be interpreted as necessarily representing the official policies, either expressed or implied, of ODNI, IARPA, or the U.S. Government. The U.S. Government is authorized to reproduce and distribute reprints for governmental purposes notwithstanding any copyright annotation therein.
+
+\newpage
 
 # References
