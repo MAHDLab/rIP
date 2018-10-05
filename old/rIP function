@@ -1,4 +1,5 @@
 # rIP function
+# still need to load data and vector directly in single function
 
 getIPinfo <- function(ips, key) {
   library(httr)
