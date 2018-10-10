@@ -1,3 +1,6 @@
+[![CRAN_Status_Badge](https://www.r-pkg.org/badges/version/rIP)](http://cran.r-project.org/package=rIP)
+[![Downloads](http://cranlogs.r-pkg.org/badges/grand-total/rIP)](http://cranlogs.r-pkg.org/)
+
 `rIP` detects likely responses from server farms on MTurk surveys. 
 
 Users input an array of IPs and the user's X-Key, and the function passes these to <iphub.info>, and returns a dataframe with the ip (used for merging), country code, country name, asn, isp, block, and hostname.
