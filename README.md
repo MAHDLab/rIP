@@ -11,4 +11,4 @@ The recommendation from iphub.info is to block or exclude those who score block 
 
 `rIP` requires an API key from <https://iphub.info/api>. Users can register for a free key that allows for up to 1,000 IP inquiries per day.
 
-We thank @tylerburleigh for pointing out the utility of iphub.info. His method for incorporating this information into Qualtrics surveys can be found [here](https://twitter.com/tylerburleigh/status/1042528912511848448?s=19).
+We thank Tyler Burleigh for pointing out the utility of iphub.info. His method for incorporating this information into Qualtrics surveys can be found [here](https://twitter.com/tylerburleigh/status/1042528912511848448?s=19).
