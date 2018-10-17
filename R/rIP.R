@@ -34,7 +34,7 @@ getIPinfo <- function(d, i, key){
   pb <- utils::txtProgressBar(min = 0, max = length(ips), style = 3)
   ipDF <- c()
   for (i in 1:length(ips)) {
-    if(is.na(ip_classify(ips[i])) | ip_classify(ips[i]) == "invalid") {
+    if(is.na(iptools::ip_classify(ips[i])) | iptools::ip_classify(ips[i]) == "invalid") {
       warning(paste0("Warning: An invalid or missing IP address was detected on line ", i, ". Please check this."))
       next
     }
