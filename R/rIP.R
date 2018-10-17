@@ -23,14 +23,22 @@ getIPinfo <- function(d, i, key){
     stop("Package \"utils\" needed for this function to work. Please install it.",
          call. = FALSE)
   }
-  message("* Consider storing the ipDF as an object to write as an external df, e.g., write.csv(ipDF, 'ipDF.csv')")
+  if (!requireNamespace("iptools", quietly = TRUE)) {
+    stop("Package \"iptools\" needed for this function to work. Please install it.",
+         call. = FALSE)
+  }
+  #message("* Consider storing the ipDF as an object to write as an external df, e.g., write.csv(ipDF, 'ipDF.csv')")
   ips <- unique(d[ ,i])
   options(stringsAsFactors = FALSE)
   url <- "http://v2.api.iphub.info/ip/"
   pb <- utils::txtProgressBar(min = 0, max = length(ips), style = 3)
   ipDF <- c()
   for (i in 1:length(ips)) {
-    ipInfo <- httr::GET(paste0(url, ips[i]), httr::add_headers(`X-Key` = key))
+    if(is.na(ip_classify(ips[i])) | ip_classify(ips[i]) == "invalid") {
+      warning(paste0("Warning: An invalid or missing IP address was detected on line ", i, ". Please check this."))
+      next
+    }
+  ipInfo <- httr::GET(paste0(url, ips[i]), httr::add_headers(`X-Key` = key))
     infoVector <- unlist(httr::content(ipInfo))
     ipDF <- rbind(ipDF, infoVector)
     utils::setTxtProgressBar(pb, i)
