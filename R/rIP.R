@@ -17,34 +17,34 @@
 #'data <- data.frame(id,ips)
 #'getIPinfo(data, "ips", "MzI3NDpJcVJS3xcQ", "useremailaddress", "d97014f62h01", plots = TRUE)
 #'@export
-getIPinfo <- function(d, i, iphub_key, ipintel_key, proxycheck_key, plots = TRUE){
-  if(!requireNamespace("httr", quietly = TRUE)) {
+getIPinfo <- function(d, i, iphub_key = NA, ipintel_key = NA, proxycheck_key = NA, plots = TRUE){
+  if (!requireNamespace("httr", quietly = TRUE)) {
     stop("Package \"httr\" needed for this function to work. Please install it.",
          call. = FALSE)
   }
-  if(!requireNamespace("utils", quietly = TRUE)) {
+  if (!requireNamespace("utils", quietly = TRUE)) {
     stop("Package \"utils\" needed for this function to work. Please install it.",
          call. = FALSE)
   }
-  if(!requireNamespace("iptools", quietly = TRUE)) {
+  if (!requireNamespace("iptools", quietly = TRUE)) {
     stop("Package \"iptools\" needed for this function to work. Please install it.",
          call. = FALSE)
   }
-  if(!requireNamespace("dplyr", quietly = TRUE)) {
+  if (!requireNamespace("dplyr", quietly = TRUE)) {
     stop("Package \"dplyr\" needed for this function to work. Please install it.",
          call. = FALSE)
   }
+  d <- as.data.frame(d)
   if (!is.data.frame(d)) warning("d must be a 'data.frame' object: Try 'as.data.frame(d)'")
   ips <- unique(d[ , i])
   options(stringsAsFactors = FALSE)
   iphub_url <- "http://v2.api.iphub.info/ip/"
   ipintel_url <- "http://check.getipintel.net/check.php?ip="
   proxycheck_url <- "http://proxycheck.io/v2/"
-  pb <- utils::txtProgressBar(min = 0, max = length(ips), style = 3)
   # Check iphub.info
   iphubDF <- c()
   if (!is.na(iphub_key)) {
-    cat(paste("Getting IP Hub information."))
+    cat(paste("\nGetting IP Hub information.\n\n"))
     pb <- utils::txtProgressBar(min = 0, max = length(ips), style = 3)
     for (i in 1:length(ips)) {
       if (is.na(iptools::ip_classify(ips[i])) | iptools::ip_classify(ips[i]) == "invalid") {
@@ -81,7 +81,7 @@ getIPinfo <- function(d, i, iphub_key, ipintel_key, proxycheck_key, plots = TRUE
   # Check getipinfo.net
   ipintelDF <- c()
   if (!is.na(ipintel_key)) {
-    cat(paste("Getting GetIPIntel.net information."))
+    cat(paste("\nGetting GetIPIntel.net information.\n\n"))
     pb <- utils::txtProgressBar(min = 0, max = length(ips), style = 3)
     for (i in 1:length(ips)) {
       if (is.na(iptools::ip_classify(ips[i])) | iptools::ip_classify(ips[i]) == "invalid") {
@@ -111,14 +111,14 @@ getIPinfo <- function(d, i, iphub_key, ipintel_key, proxycheck_key, plots = TRUE
               ylab = "Frequency")
       ipintelDF$plot_var <- NULL
     }
-    names(ipintelDF)[1:3] <- c("IPAddress", "IP_Info_Country_Code", "IP_Info_ISP")
+    names(ipintelDF)[1:3] <- c("IPAddress", "IP_Intel_Country_Code", "IP_Intel_ISP")
   }else {
     ipintelDF <- data.frame(ips)
     names(ipintelDF) <- "IPAddress"}
   # Check proxycheck.io
   proxycheckDF <- c()
   if (!is.na(proxycheck_key)) {
-    cat(paste("Getting proxycheck.io information."))
+    cat(paste("\nGetting proxycheck.io information.\n\n"))
     pb <- utils::txtProgressBar(min = 0, max = length(ips), style = 3)
     for (i in 1:length(ips)) {
       if (is.na(iptools::ip_classify(ips[i])) | iptools::ip_classify(ips[i]) == "invalid") {
