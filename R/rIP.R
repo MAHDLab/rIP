@@ -34,7 +34,6 @@ getIPinfo <- function(d, i, iphub_key, ipintel_key, proxycheck_key, plots = TRUE
     stop("Package \"dplyr\" needed for this function to work. Please install it.",
          call. = FALSE)
   }
-  #message("* Consider storing the ipDF as an object to write as an external df, e.g., write.csv(ipDF, 'ipDF.csv')")
   if (!is.data.frame(d)) warning("d must be a 'data.frame' object: Try 'as.data.frame(d)'")
   ips <- unique(d[ , i])
   options(stringsAsFactors = FALSE)
