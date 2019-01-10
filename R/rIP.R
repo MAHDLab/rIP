@@ -17,7 +17,7 @@
 #'data <- data.frame(id,ips)
 #'getIPinfo(data, "ips", "MzI3NDpJcVJS3xcQ", "useremailaddress", "d97014f62h01", plots = TRUE)
 #'@export
-getIPinfo <- function(d, i, iphub_key = NA, ipintel_key = NA, proxycheck_key = NA, plots = TRUE){
+getIPinfo <- function(d, i, iphub_key = "", ipintel_key = "", proxycheck_key = "", plots = TRUE){
   if (!requireNamespace("httr", quietly = TRUE)) {
     stop("Package \"httr\" needed for this function to work. Please install it.",
          call. = FALSE)
@@ -41,9 +41,9 @@ getIPinfo <- function(d, i, iphub_key = NA, ipintel_key = NA, proxycheck_key = N
   iphub_url <- "http://v2.api.iphub.info/ip/"
   ipintel_url <- "http://check.getipintel.net/check.php?ip="
   proxycheck_url <- "http://proxycheck.io/v2/"
-  # Check iphub.info
+  # Check iphub.info!= ""
   iphubDF <- c()
-  if (!is.na(iphub_key)) {
+  if (iphub_key != "") {
     cat(paste("\nGetting IP Hub information.\n\n"))
     pb <- utils::txtProgressBar(min = 0, max = length(ips), style = 3)
     for (i in 1:length(ips)) {
@@ -80,7 +80,7 @@ getIPinfo <- function(d, i, iphub_key = NA, ipintel_key = NA, proxycheck_key = N
     names(iphubDF) <- "IPAddress"}
   # Check getipinfo.net
   ipintelDF <- c()
-  if (!is.na(ipintel_key)) {
+  if (ipintel_key != "") {
     cat(paste("\nGetting GetIPIntel.net information.\n\n"))
     pb <- utils::txtProgressBar(min = 0, max = length(ips), style = 3)
     for (i in 1:length(ips)) {
@@ -117,7 +117,7 @@ getIPinfo <- function(d, i, iphub_key = NA, ipintel_key = NA, proxycheck_key = N
     names(ipintelDF) <- "IPAddress"}
   # Check proxycheck.io
   proxycheckDF <- c()
-  if (!is.na(proxycheck_key)) {
+  if (proxycheck_key != "") {
     cat(paste("\nGetting proxycheck.io information.\n\n"))
     pb <- utils::txtProgressBar(min = 0, max = length(ips), style = 3)
     for (i in 1:length(ips)) {
