@@ -10,7 +10,7 @@
 #'@param plots Logical argument. If TRUE, produces a barplot of potentially suspicious IP addresses. Default is TRUE.
 #'@details Takes an array of IPs and the keys for the services the user wishes to use (IP Hub, IP Intel, and Proxycheck), and passes these to all respective APIs. Returns a dataframe with the IP addresses (used for merging), country, ISP, labels for non-US IP Addresses, VPS use, and recommendations for blocking. The function also provides optional visualization tools for checking the distributions.
 #'@return ipDF A dataframe with the IP address, country code, country name, asn, isp, block, and hostname.
-#'@note Users must have an active iphub.info account with a valid X-key.
+#'@note Users must have active accounts and/or valid keys at iphub, ipintel, and/or proxycheck.
 #'@example
 #'id <- c(1,2,3,4) # fake respondent id's
 #'ips <- c(123.232, 213.435, 234.764, 543.765) # fake ips
