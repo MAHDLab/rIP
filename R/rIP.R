@@ -81,7 +81,7 @@ getIPinfo <- function(d, i, iphub_key = "", ipintel_key = "", proxycheck_key = "
   # Check getipinfo.net
   ipintelDF <- c()
   if (ipintel_key != "") {
-    cat(paste("\nGetting GetIPIntel.net information.\n\n"))
+    cat(paste("\nGetting GetIPIntel.net information.\n\nWarning: This service is slow to avoid abuse.\n\n"))
     pb <- utils::txtProgressBar(min = 0, max = length(ips), style = 3)
     for (i in 1:length(ips)) {
       if (is.na(iptools::ip_classify(ips[i])) | iptools::ip_classify(ips[i]) == "invalid") {
@@ -93,6 +93,7 @@ getIPinfo <- function(d, i, iphub_key = "", ipintel_key = "", proxycheck_key = "
       infoVector <- unlist(httr::content(ipInfo))
       ipintelDF <- rbind(ipintelDF, infoVector)
       utils::setTxtProgressBar(pb, i)
+      Sys.sleep(4)
     }
     close(pb)
     rownames(ipintelDF) <- NULL
