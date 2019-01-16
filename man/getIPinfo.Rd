@@ -29,5 +29,5 @@ Cleans and processes an array of IP address data and, using keys for several IP 
 Takes an array of IPs and the keys for the services the user wishes to use (IP Hub, IP Intel, and Proxycheck), and passes these to all respective APIs. Returns a dataframe with the IP addresses (used for merging), country, ISP, labels for non-US IP Addresses, VPS use, and recommendations for blocking. The function also provides optional visualization tools for checking the distributions.
 }
 \note{
-Users must have an active iphub.info account with a valid X-key.
+Users must have active accounts and/or valid keys at iphub, ipintel, and/or proxycheck.
 }
