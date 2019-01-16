@@ -4,14 +4,12 @@
 [![GitHub license](https://img.shields.io/github/license/MAHDLab/rIP.svg?style=plastic)](https://github.com/MAHDLab/rIP/blob/master/LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=plastic)](https://github.com/MAHDLab/rIP/pulls)
 
-`rIP` detects likely responses from server farms on MTurk surveys. Though designed in response to the MTurk crisis, `rIP` can be used for any online survey, with any vector of IP addresses. 
+`rIP` detects Fraud in online surveys by tracing, scoring, and visualizing IP addresses. 
 
-Users input an array of IPs and the user's X-Key, and the function passes these to <iphub.info>, and returns a dataframe with the ip (used for merging), country code, country name, asn, isp, block, and hostname.
+Takes an array of IPs and the keys for the services the user wishes to use (IP Hub, IP Intel, and Proxycheck), and passes these to all respective APIs. Returns a dataframe with the IP addresses (used for merging), country, ISP, labels for non-US IP Addresses, VPS use, and recommendations for blocking. Users also have the option to visualize the distributions.
 
-Especially important in this is the variable "block", which gives a score indicating whether the IP address is likely from a server farm and should be excluded from the data. It is coded 0 if the IP is residential/unclassified (i.e. safe IP), 1 if the IP is non-residential IP (hostping provider, proxy, etc. - should likely be excluded), and 2 for non-residential and residential IPs (more stringent, may flag innocent respondents).
+Especially important in this is the variable "block", which gives a score indicating whether the IP address is likely from a server farm and should be excluded from the data. It is codes 0 if the IP is residential/unclassified (i.e. safe IP), 1 if the IP is non-residential IP (hostping provider, proxy, etc. - should likely be excluded), and 2 for non-residential and residential IPs (more stringent, may flag innocent respondents).
 
-The recommendation from iphub.info is to block or exclude those who score block = 1.
+`rIP` requires users to have active (free) accounts and/or valid keys at iphub, ipintel, and/or proxycheck.
 
-`rIP` requires an API key from <https://iphub.info/api>. Users can register for a free key that allows for up to 1,000 IP inquiries per day.
-
-We thank Tyler Burleigh for pointing out the utility of iphub.info. His method for incorporating this information into Qualtrics surveys can be found [here](https://twitter.com/tylerburleigh/status/1042528912511848448?s=19).
+We thank @tylerburleigh for his help on this tool. His method for incorporating this information into Qualtrics surveys can be found [here](https://twitter.com/tylerburleigh/status/1042528912511848448?s=19).
