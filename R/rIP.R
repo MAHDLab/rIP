@@ -111,7 +111,7 @@ getIPinfo <- function(d, i, iphub_key = "", ipintel_key = "", proxycheck_key = "
               ylab = "Frequency")
       ipintelDF$plot_var <- NULL
     }
-    names(ipintelDF)[1:3] <- c("IPAddress", "IP_Intel_Country_Code", "IP_Intel_ISP")
+    names(ipintelDF)[1:3] <- c("IPAddress", "IP_Intel_Country_Code", "IP_Intel_p_VPS")
   }else {
     ipintelDF <- data.frame(ips)
     names(ipintelDF) <- "IPAddress"}
