@@ -16,7 +16,7 @@ authors:
 affiliations:
  - name: College of William & Mary
    index: 1
- - name: MAHD Lab, University of Houston
+ - name: Machine Assisted Human Decision-making (MAHD) Lab, University of Houston
    index: 2
 date: 24 January 2019
 bibliography: paper.bib
