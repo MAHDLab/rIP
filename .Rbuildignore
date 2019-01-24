@@ -1,0 +1,7 @@
+.github/*
+^LICENSE\.txt$
+^rIP_manual\.pdf$
+^paper\.bib$
+^paper\.md$
+^figure1\.png$
+^figure2\.png$
