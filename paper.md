@@ -16,7 +16,7 @@ authors:
 affiliations:
  - name: College of William & Mary
    index: 1
- - name: Machine Assisted Human Decision-making (MAHD) Lab, University of Houston
+ - name: MAHD Lab, University of Houston
    index: 2
 date: 24 January 2019
 bibliography: paper.bib
@@ -24,7 +24,7 @@ bibliography: paper.bib
 
 # Summary
 
-Amazon's Mechanical Turk (MTurk) and other online convenience samples are used in thousands of published social science studies every year. In 2015 alone, over 1,200 published studies used MTurk([@bohannon:2016]). Many recent studies have validated the use of MTurk to address substantive questions of interest in the social sciences (e.g., [@clifford:2015], [@huff:2015], [@casler:2013], [@buhrmester:2011]). Because of this, recent reports of widespread fraudulent responses on MTurk, up to 25% of respondents in some studies, set off a panic in academia ([@dreyfuss:2018], [@ahler:2018]). The problem has been traced to the use of Virtual Private Servers (VPS) to answer U.S. surveys from abroad ([@dennis:2018], [@TurkPrime:2018]), and may have affected studies as far back as 2015 ([@kennedy:2018]). Yet, the tools available to social scientists to check their surveys for VPS use and non-U.S. respndents are not easily usable for most researchers; some are outdated and involve Python programming [(@ahler:2018)], while other require researchers to paste IP Addresses in one at a time [(@dennis:2018)]. As more research moves online using services like MTurk, CrowdFlower, and Luc.id, there is a need for tools to check IP Addresses that fit into standard social science research flow.
+Amazon's Mechanical Turk (MTurk) and other online convenience samples are used in thousands of published social science studies every year. One survey estimated that, in 2015 alone, over 1,200 published studies used MTurk ([@bohannon:2016]).  Another found that over 40% of studies in two top psychology journals in 2015 included at least one MTurk experiment ([@Zhou:2016]). Many recent studies have validated the use of MTurk to address substantive questions of interest in the social sciences (e.g., [@clifford:2015], [@huff:2015], [@casler:2013], [@buhrmester:2011]). Because of this, recent reports of widespread fraudulent responses on MTurk, up to 25% of respondents in some studies, set off a panic in academia ([@dreyfuss:2018], [@ahler:2018]). The problem has been traced to the use of Virtual Private Servers (VPS) to answer U.S. surveys from abroad ([@dennis:2018], [@TurkPrime:2018]), and may have affected studies as far back as 2015 ([@kennedy:2018]). Yet, the tools available to social scientists to check their surveys for VPS use and non-U.S. respndents are not easily usable for most researchers; some are outdated and involve Python programming [(@ahler:2018)], while other require researchers to paste IP Addresses in one at a time [(@dennis:2018)]. As more research moves online using services like MTurk, CrowdFlower, and Luc.id, there is a need for tools to check IP Addresses that fit into standard social science research flow.
 
 The R package [@team:2000] `rIP` is dedicated to helping researchers fix this problem by offering an intuitive, simple-to-use function to trace, score, and visualize the location and validity of any IP address by pinging up to three IP verification services (<https://iphub.info>, <https://getipintel.net>, and <https://proxycheck.io/>). The function returns the information on the IP, including the country of the IP address, internet service provider (ISP) and whether the IP address is likely a server farm being used to disguise the respondent's location. It also provides recommendations for exclusion based on the recommendations of the current literature [(@kennedy:2018, @TurkPrime:2018, @Dennis:2018)], and optional plots that can be used in supporting information. These respondents can then be excluded from analysis, though the decision to include or exclude respondents is left to the researcher. Though the package was designed in response to the scare about MTurk quality regarding IP addresses and server farms, users can use the function to check any vector of IP addresses of interest. Since almost every online survey and application development system allows for the capture of IP addresses, this package can be used as an auditing tool on almost any online survey. The implications of this become clearer in the package demonstration below.
 
@@ -63,9 +63,13 @@ The above code will generate the following output:
 
 ![Sample Visual Output from rIP.](figure2.png)
 
+\newpage
+
 # Package Access
 
 The `rIP` package can be downloaded from CRAN or, for the most recent version, installed directly from the source code freely accessible at the corresponding GitHub repository along with all package documentation and an issue tracker. The latter option for access is demonstrated in the code above.
+
+\newpage
 
 # Acknowledgements
 
