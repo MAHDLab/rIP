@@ -63,13 +63,9 @@ The above code will generate the following output:
 
 ![Sample Visual Output from rIP.](figure2.png)
 
-\newpage
-
 # Package Access
 
 The `rIP` package can be downloaded from CRAN or, for the most recent version, installed directly from the source code freely accessible at the corresponding GitHub repository along with all package documentation and an issue tracker. The latter option for access is demonstrated in the code above.
-
-\newpage
 
 # Acknowledgements
 
