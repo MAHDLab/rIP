@@ -4,7 +4,7 @@ Title: Detects Fraud in Online Surveys by Tracing, Scoring, and Visualizing IP A
 Version: 1.1.1
 BugReports: https://github.com/MAHDLab/rIP/issues
 Authors@R: c(person("Ryan", "Kennedy", role = c("aut", "cre"), email = "rkennedy@uh.edu"),
-             person("Philip", "Waggoner", role = "aut", email = "pdwaggoner@wm.edu"),
+             person("Philip", "Waggoner", role = "aut", email = "philip.waggoner@gmail.com"),
              person("Scott", "Clifford", role = "ctb"))
 Maintainer: Ryan Kennedy <rkennedy@uh.edu>
 Description: Takes an array of IPs and the keys for the services the user wishes to use (IP Hub, IP Intel, and Proxycheck), 
