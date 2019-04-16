@@ -2,6 +2,7 @@ Package: rIP
 Type: Package
 Title: Detects Fraud in Online Surveys by Tracing, Scoring, and Visualizing IP Addresses
 Version: 1.1.1
+BugReports: https://github.com/MAHDLab/rIP/issues
 Authors@R: c(person("Ryan", "Kennedy", role = c("aut", "cre"), email = "rkennedy@uh.edu"),
              person("Philip", "Waggoner", role = "aut", email = "pdwaggoner@wm.edu"),
              person("Scott", "Clifford", role = "ctb"))
