@@ -14,3 +14,35 @@ Especially important in this is the variable "block", which gives a score indica
 We thank @tylerburleigh for his help on this tool.
 
 See some related working papers [here](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3272468) and [here](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3327274). 
+
+### Installation
+
+Users can install either the stable version released on CRAN:
+
+```{R}
+install.packages("rIP")
+library(rIP)
+```
+
+Or the dev version directly from GitHub:
+
+```{R}
+library(devtools)
+install_github(MAHDLab/rIP)
+library(rIP)
+```
+
+### Usage
+
+```{R}
+# Load the library
+library(rIP)
+
+# Store personal keys for IP service pings (here we include only "ipHub" as an example)
+ip_hub_key <- "MzI2MTpkOVpld3pZTVg1VmdTV3ZPenpzMmhodkJmdEpIMkRMZQ=="
+ipsample <- data.frame(rbind(c(1, "129.7.105.146"), c(2, "128.239.134.248")))
+names(ipsample) <- c("number", "IPAddress")
+
+# Call the function
+getIPinfo(ipsample, "IPAddress", iphub_key = ip_hub_key)
+```
