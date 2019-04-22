@@ -1,0 +1,15 @@
+---
+title: "CONTRIBUTING.md"
+author: "Philip D. Waggoner"
+date: "4/22/2019"
+output: html_document
+---
+
+
+The paper and `rIP` package would have been impossible without the input of many people. However, the primary contributors both to the `rIP` package and the JOSS paper include:
+
+1. Ryan Kennedy: Original `rIP` function developer; conceptual designer; paper contributor.
+
+2. Philip D. Waggoner: R Package developer; original `rIP` function contributor; paper contributor.
+
+3. Scott Clifford: Conceptual contributor; paper contributor. 
