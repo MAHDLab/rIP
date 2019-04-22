@@ -12,10 +12,11 @@
 #'@return ipDF A dataframe with the IP address, country code, country name, asn, isp, block, and hostname.
 #'@note Users must have active accounts and/or valid keys at iphub, ipintel, and/or proxycheck.
 #'@example
-#'id <- c(1,2,3,4) # fake respondent id's
-#'ips <- c(123.232, 213.435, 234.764, 543.765) # fake ips
-#'data <- data.frame(id,ips)
-#'getIPinfo(data, "ips", "MzI3NDpJcVJS3xcQ", "useremailaddress", "d97014f62h01", plots = TRUE)
+#'library(rIP)
+#'ip_hub_key <- "MzI2MTpkOVpld3pZTVg1VmdTV3ZPenpzMmhodkJmdEpIMkRMZQ=="
+#'ipsample <- data.frame(rbind(c(1, "129.7.105.146"), c(2, "128.239.134.248")))
+#'names(ipsample) <- c("number", "IPAddress")
+#'getIPinfo(ipsample, "IPAddress", iphub_key = ip_hub_key)
 #'@export
 getIPinfo <- function(d, i, iphub_key = "", ipintel_key = "", proxycheck_key = "", plots = TRUE){
   if (!requireNamespace("httr", quietly = TRUE)) {
