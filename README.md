@@ -47,4 +47,4 @@ getIPinfo(ipsample, "IPAddress", iphub_key = ip_hub_key)
 
 ### Acknowledgements
 
-We thank @tylerburleigh for his help on this tool.
+We thank Tyler Burleigh for his help on this tool.
