@@ -9,9 +9,7 @@ Takes an array of IPs and the keys for the services the user wishes to use (IP H
 
 Especially important in this is the variable "block", which gives a score indicating whether the IP address is likely from a server farm and should be excluded from the data. It is codes 0 if the IP is residential/unclassified (i.e. safe IP), 1 if the IP is non-residential IP (hostping provider, proxy, etc. - should likely be excluded), and 2 for non-residential and residential IPs (more stringent, may flag innocent respondents).
 
-`rIP` requires users to have active (free) accounts and/or valid keys at iphub, ipintel, and/or proxycheck.
-
-We thank @tylerburleigh for his help on this tool.
+*Note*: `rIP` requires users to have active (free) accounts and/or valid keys at iphub, ipintel, and/or proxycheck.
 
 See some related working papers [here](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3272468) and [here](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3327274). 
 
@@ -46,3 +44,7 @@ names(ipsample) <- c("number", "IPAddress")
 # Call the function
 getIPinfo(ipsample, "IPAddress", iphub_key = ip_hub_key)
 ```
+
+### Acknowledgements
+
+We thank @tylerburleigh for his help on this tool.
