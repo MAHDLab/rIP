@@ -17,14 +17,14 @@ See some related working papers [here](https://papers.ssrn.com/sol3/papers.cfm?a
 
 ### Installation
 
-Users can install either the stable version released on CRAN:
+Users can install either the stable version released on [CRAN (v0.1.1)](https://CRAN.R-project.org/package=rIP):
 
 ```{R}
 install.packages("rIP")
 library(rIP)
 ```
 
-Or the dev version directly from GitHub:
+Or the dev version directly from our GitHub repo:
 
 ```{R}
 library(devtools)
