@@ -31,3 +31,13 @@ Takes an array of IPs and the keys for the services the user wishes to use (IP H
 \note{
 Users must have active accounts and/or valid keys at iphub, ipintel, and/or proxycheck.
 }
+\examples{
+\dontrun{
+ip_hub_key <- "MzI2MTpkOVpld3pZTVg1VmdTV3ZPenpzMmhopIMkRMZQ=="
+ipintel_key <- "useremailaddress"
+proxycheck_key <- "MzI2MTpkOVpld3pZTVg1VmdTV3ZPenpzMmhod"
+ipsample <- data.frame(rbind(c(1, "189.8.105.146"), c(2, "148.233.134.248")))
+names(ipsample) <- c("number", "IPAddress")
+getIPinfo(ipsample, "IPAddress", ip_hub_key, ipintel_key, proxycheck_key)
+}
+}
