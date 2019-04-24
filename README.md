@@ -15,7 +15,7 @@ See some related working papers [here](https://papers.ssrn.com/sol3/papers.cfm?a
 
 ### Installation
 
-Users can install either the stable version released on [CRAN (v0.1.1)](https://CRAN.R-project.org/package=rIP):
+Users can install either the stable version released on [CRAN (v1.1.1)](https://CRAN.R-project.org/package=rIP):
 
 ```{R}
 install.packages("rIP")
