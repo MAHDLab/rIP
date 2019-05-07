@@ -1,6 +1,6 @@
 ## `rIP` detects Fraud in online surveys by tracing, scoring, and visualizing IP addresses
 
-<!-- [![CRAN_Status_Badge](https://www.r-pkg.org/badges/version/rIP)](http://cran.r-project.org/package=rIP) -->
+[![CRAN_Status_Badge](https://www.r-pkg.org/badges/version/rIP)](http://cran.r-project.org/package=rIP)
 [![CRAN RStudio mirror downloads](http://cranlogs.r-pkg.org/badges/rIP)](http://www.r-pkg.org/pkg/rIP)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=plastic)](https://github.com/MAHDLab/rIP/pulls)
 <!-- [![GitHub license](https://img.shields.io/github/license/MAHDLab/rIP.svg?style=plastic)](https://github.com/MAHDLab/rIP/blob/master/LICENSE) -->
@@ -15,7 +15,7 @@ See some related working papers [here](https://papers.ssrn.com/sol3/papers.cfm?a
 
 ### Installation
 
-Users can install either the stable version released on [CRAN (v1.1.1)](https://CRAN.R-project.org/package=rIP):
+Users can install either the stable version released on [CRAN (v1.1.2)](https://CRAN.R-project.org/package=rIP):
 
 ```{R}
 install.packages("rIP")
