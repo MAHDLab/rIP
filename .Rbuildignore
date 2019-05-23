@@ -5,3 +5,6 @@
 ^paper\.md$
 ^figure1\.png$
 ^figure2\.png$
+^.*\.Rproj$
+^\.Rproj\.user$
+^CONTRIBUTING$

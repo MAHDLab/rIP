@@ -1,22 +1,30 @@
 Package: rIP
 Type: Package
 Title: Detects Fraud in Online Surveys by Tracing, Scoring, and Visualizing IP Addresses
-Version: 1.1.2
+Version: 1.2.0
 Authors@R: c(person("Ryan", "Kennedy", role = c("aut", "cre"), email = "rkennedy@uh.edu"),
              person("Philip", "Waggoner", role = "aut", email = "pdwaggoner@wm.edu"),
-             person("Scott", "Clifford", role = "ctb"))
+             person("Scott", "Clifford", role = "ctb"),
+             person("Bob", "Rudis", role = "ctb", email = "bob@rud.is",
+               comment = c(ORCID = "0000-0001-5670-2640")
+             ))
 Maintainer: Ryan Kennedy <rkennedy@uh.edu>
 Description: Takes an array of IPs and the keys for the services the user wishes to use (IP Hub, IP Intel, and Proxycheck), 
     and passes these to all respective APIs. Returns a dataframe with the IP addresses (used for merging), 
     country, ISP, labels for non-US IP Addresses, VPS use, and recommendations for blocking. The package 
-    also provides optional visualization tools for checking the distributions.
-Imports: httr, utils, iptools, dplyr, graphics, amerika
+    also provides optional visualization tools for checking the distributions. Additional
+    functions are provided to call each discrete API endpoint.
+Imports: httr, utils, iptools, dplyr, graphics, amerika, jsonlite
+URL: http://joss.theoj.org/papers/10.21105/joss.01285
+BugReports: https://github.com/MAHDLab/rIP
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.1.1
 NeedsCompilation: no
-Packaged: 2018-12-23
 Author: Ryan Kennedy [aut, cre],
   Philip Waggoner [aut],
-  Scott Clifford [ctb]
+  Scott Clifford [ctb],
+  Bob Rudis [ctb]
+Suggests: 
+    testthat (>= 2.1.0)
