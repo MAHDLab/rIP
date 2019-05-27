@@ -13,3 +13,5 @@ The paper and `rIP` package would have been impossible without the input of many
 2. Ryan Kennedy: Original `rIP` function developer and author; conceptual designer; paper contributor
 
 3. Scott Clifford: Conceptual contributor; paper contributor
+
+4. Bob Rudis: Streamlined code and efficiency; alignment with API call best practices
