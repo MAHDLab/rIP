@@ -16,7 +16,7 @@ Takes an array of IPs and the keys for the services the user wishes to use (IP H
 Useful links:
 \itemize{
   \item \url{http://joss.theoj.org/papers/10.21105/joss.01285}
-  \item Report bugs at \url{https://github.com/MAHDLab/rIP}
+  \item Report bugs at \url{https://github.com/MAHDLab/rIP/issues}
 }
 
 }
@@ -25,7 +25,7 @@ Useful links:
 
 Authors:
 \itemize{
-  \item Philip Waggoner \email{pdwaggoner@wm.edu}
+  \item Philip Waggoner \email{philip.waggoner@gmail.com} (0000-0002-7825-7573)
 }
 
 Other contributors:
