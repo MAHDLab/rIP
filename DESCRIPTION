@@ -3,7 +3,8 @@ Type: Package
 Title: Detects Fraud in Online Surveys by Tracing, Scoring, and Visualizing IP Addresses
 Version: 1.2.0
 Authors@R: c(person("Ryan", "Kennedy", role = c("aut", "cre"), email = "rkennedy@uh.edu"),
-             person("Philip", "Waggoner", role = "aut", email = "pdwaggoner@wm.edu"),
+             person("Philip", "Waggoner", role = "aut", email = "philip.waggoner@gmail.com",
+               comment = c(ORCID = "0000-0002-7825-7573")),
              person("Scott", "Clifford", role = "ctb"),
              person("Bob", "Rudis", role = "ctb", email = "bob@rud.is",
                comment = c(ORCID = "0000-0001-5670-2640")
@@ -16,7 +17,7 @@ Description: Takes an array of IPs and the keys for the services the user wishes
     functions are provided to call each discrete API endpoint.
 Imports: httr, utils, iptools, dplyr, graphics, amerika, jsonlite
 URL: http://joss.theoj.org/papers/10.21105/joss.01285
-BugReports: https://github.com/MAHDLab/rIP
+BugReports: https://github.com/MAHDLab/rIP/issues
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
