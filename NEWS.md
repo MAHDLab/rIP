@@ -27,4 +27,4 @@ With several contributions from Bob Rudis (hrbrmstr), we have substantially upda
 
 ## How do I get `rIP `?
 
-The package is released on CRAN and is developed and stored at the corresponding GitHub repository: <https://github.com/MAHDLab/rIP>. Questions or concerns? Please reach out to us directly via email or issue tickets on GitHub. Thanks and enjoy!
+The package is released on CRAN and is developed and stored at the corresponding GitHub repository: <https://github.com/MAHDLab/rIP>. Questions or concerns? Please reach out to us directly via email or issue tickets on GitHub. Thanks and enjoy! 
