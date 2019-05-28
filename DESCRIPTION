@@ -23,9 +23,5 @@ Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.1.1
 NeedsCompilation: no
-Author: Ryan Kennedy [aut, cre],
-  Philip Waggoner [aut],
-  Scott Clifford [ctb],
-  Bob Rudis [ctb]
 Suggests: 
     testthat (>= 2.1.0)
