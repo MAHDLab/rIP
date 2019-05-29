@@ -14,7 +14,8 @@ Description: Takes an array of IPs and the keys for the services the user wishes
     and passes these to all respective APIs. Returns a dataframe with the IP addresses (used for merging), 
     country, ISP, labels for non-US IP Addresses, VPS use, and recommendations for blocking. The package 
     also provides optional visualization tools for checking the distributions. Additional
-    functions are provided to call each discrete API endpoint.
+    functions are provided to call each discrete API endpoint. The package and methods are detailed in the recent paper 
+    Waggoner, Kennedy, and Clifford (2019) <doi:10.21105/joss.01285>.
 Imports: httr, utils, iptools, dplyr, graphics, amerika, jsonlite
 URL: http://joss.theoj.org/papers/10.21105/joss.01285
 BugReports: https://github.com/MAHDLab/rIP/issues
