@@ -21,7 +21,7 @@
 #'getIPinfo(ipsample, "IPAddress", ip_hub_key, ipintel_key, proxycheck_key)
 #'}
 #'@export
-getIPinfo <- function(d, i, iphub_key, ipintel_key, proxycheck_key, plots = TRUE){
+getIPinfo <- function(d, i, iphub_key = NULL, ipintel_key = NULL, proxycheck_key = NULL, plots = TRUE){
   if(!requireNamespace("httr", quietly = TRUE)) {
     stop("Package \"httr\" needed for this function to work. Please install it.",
          call. = FALSE)
@@ -52,7 +52,7 @@ getIPinfo <- function(d, i, iphub_key, ipintel_key, proxycheck_key, plots = TRUE
   pb <- utils::txtProgressBar(min = 0, max = length(ips), style = 3)
   # Check iphub.info
   iphubDF <- c()
-  if (!is.na(iphub_key)) {
+  if (!is.null(iphub_key)) {
     cat(paste("Getting IP Hub information."))
     pb <- utils::txtProgressBar(min = 0, max = length(ips), style = 3)
     for (i in 1:length(ips)) {
@@ -79,8 +79,8 @@ getIPinfo <- function(d, i, iphub_key, ipintel_key, proxycheck_key, plots = TRUE
                                         "Clean"))
       tablePlot <- table(iphubDF$plot_var)
       graphics::barplot(tablePlot, main = "IP Hub", xlab = "Abberation detection",
-              ylab = "Frequency",
-              col = amerika::amerika_palette("Dem_Ind_Rep3"))
+                        ylab = "Frequency",
+                        col = amerika::amerika_palette("Dem_Ind_Rep3"))
       iphubDF$plot_var <- NULL
     }
     iphubDF$block <- NULL
@@ -90,7 +90,7 @@ getIPinfo <- function(d, i, iphub_key, ipintel_key, proxycheck_key, plots = TRUE
     names(iphubDF) <- "IPAddress"}
   # Check getipinfo.net
   ipintelDF <- c()
-  if (!is.na(ipintel_key)) {
+  if (!is.null(ipintel_key)) {
     cat(paste("Getting GetIPIntel.net information."))
     pb <- utils::txtProgressBar(min = 0, max = length(ips), style = 3)
     for (i in 1:length(ips)) {
@@ -118,8 +118,8 @@ getIPinfo <- function(d, i, iphub_key, ipintel_key, proxycheck_key, plots = TRUE
                                           "Clean"))
       tablePlot <- table(ipintelDF$plot_var)
       graphics::barplot(tablePlot, main = "IP Intel", xlab = "Abberation detection",
-              ylab = "Frequency",
-              col = amerika::amerika_palette("Dem_Ind_Rep3"))
+                        ylab = "Frequency",
+                        col = amerika::amerika_palette("Dem_Ind_Rep3"))
       ipintelDF$plot_var <- NULL
     }
     names(ipintelDF)[1:3] <- c("IPAddress", "IP_Info_Country_Code", "IP_Info_ISP")
@@ -128,7 +128,7 @@ getIPinfo <- function(d, i, iphub_key, ipintel_key, proxycheck_key, plots = TRUE
     names(ipintelDF) <- "IPAddress"}
   # Check proxycheck.io
   proxycheckDF <- c()
-  if (!is.na(proxycheck_key)) {
+  if (!is.null(proxycheck_key)) {
     cat(paste("Getting proxycheck.io information."))
     pb <- utils::txtProgressBar(min = 0, max = length(ips), style = 3)
     for (i in 1:length(ips)) {
@@ -160,8 +160,8 @@ getIPinfo <- function(d, i, iphub_key, ipintel_key, proxycheck_key, plots = TRUE
                                              "Clean"))
       tablePlot <- table(proxycheckDF$plot_var)
       graphics::barplot(tablePlot, main = "Proxycheck", xlab = "Abberation detection",
-              ylab = "Frequency",
-              col = amerika::amerika_palette("Dem_Ind_Rep3"))
+                        ylab = "Frequency",
+                        col = amerika::amerika_palette("Dem_Ind_Rep3"))
       proxycheckDF$plot_var <- NULL
     }
     proxycheckDF$proxy <- NULL
