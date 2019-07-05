@@ -57,7 +57,7 @@ names(ipsample) <- c("number", "IPAddress")
 getIPinfo(ipsample, "IPAddress", iphub_key = ip_hub_key)
 ```
 
-
+![Visual Output from Function Call](iph.png)
 
 ### Acknowledgements
 
