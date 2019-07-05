@@ -40,12 +40,24 @@ library(rIP)
 
 # Store personal keys for IP service pings (here we include only "ipHub" as an example)
 ip_hub_key <- "MzI2MTpkOVpld3pZTVg1VmdTV3ZPenpzMmhodkJmdEpIMkRMZQ=="
-ipsample <- data.frame(rbind(c(1, "129.7.105.146"), c(2, "128.239.134.248")))
+
+# Generate list of random IP addresses
+ipsample <- data.frame(rbind(c(1, "30.139.234.173"), c(2, "105.21.175.134"), c(3, "221.167.14.219"),
+                             c(4, "205.218.125.55"), c(5, "191.231.0.156"), c(6, "95.107.54.16"),
+                             c(7, "244.206.230.230"), c(8, "210.38.216.32"), c(9, "17.120.223.85"),
+                             c(10, "146.153.75.77"), c(11, "246.149.59.225"), c(12, "86.77.82.141"),
+                             c(13, "89.151.46.115"), c(14, "229.123.227.10"), c(15, "21.175.8.185"),
+                             c(16, "187.193.209.68"), c(17, "74.52.31.169"), c(18, "255.99.244.220"),
+                             c(19, "149.106.54.194"), c(20, "244.214.245.239")))
+
+# Store in df
 names(ipsample) <- c("number", "IPAddress")
 
-# Call the function
+# Call the function (using only `iphub` service)
 getIPinfo(ipsample, "IPAddress", iphub_key = ip_hub_key)
 ```
+
+
 
 ### Acknowledgements
 
