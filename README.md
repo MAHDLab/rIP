@@ -60,4 +60,4 @@ getIPinfo(ipsample, "IPAddress", iphub_key = ip_hub_key)
 
 ### Acknowledgements
 
-We thank Tyler Burleigh for his help on this tool.
+We thank Tyler Burleigh, Bob Rudis, Ryan Jewell, and Nick Winter for their help on this tool.
