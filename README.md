@@ -4,8 +4,9 @@
 [![CRAN RStudio mirror downloads](http://cranlogs.r-pkg.org/badges/rIP)](http://www.r-pkg.org/pkg/rIP)
 [![DOI](http://joss.theoj.org/papers/10.21105/joss.01285/status.svg)](https://doi.org/10.21105/joss.01285)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=plastic)](https://github.com/MAHDLab/rIP/pulls)
-<!-- [![Downloads](http://cranlogs.r-pkg.org/badges/grand-total/rIP)](http://cranlogs.r-pkg.org/) -->
-<!-- [![GitHub license](https://img.shields.io/github/license/MAHDLab/rIP.svg?style=plastic)](https://github.com/MAHDLab/rIP/blob/master/LICENSE) -->
+
+[![Documentation](https://img.shields.io/badge/documentation-rIP-orange.svg?colorB=E91E63)](https://www.r-pkg.org/pkg/rIP)
+[![Features](https://img.shields.io/badge/features-rIP-orange.svg?colorB=2196F3)](https://joss.theoj.org/papers/10.21105/joss.01285)
 
 Takes an array of IPs and the keys for the services the user wishes to use (IP Hub, IP Intel, and Proxycheck), and passes these to all respective APIs. Returns a dataframe with the IP addresses (used for merging), country, ISP, labels for non-US IP Addresses, VPS use, and recommendations for blocking. Users also have the option to visualize the distributions.
 
