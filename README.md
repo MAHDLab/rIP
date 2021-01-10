@@ -1,7 +1,7 @@
 ## `rIP` detects fraud in online surveys by tracing, scoring, and visualizing IP addresses
 
 [![CRAN_Status_Badge](https://www.r-pkg.org/badges/version/rIP)](https://CRAN.R-project.org/package=rIP)
-[![CRAN RStudio mirror downloads](http://cranlogs.r-pkg.org/badges/rIP)](http://www.r-pkg.org/pkg/rIP)
+[![Downloads](http://cranlogs.r-pkg.org/badges/grand-total/rIP)](http://cranlogs.r-pkg.org/)
 [![DOI](http://joss.theoj.org/papers/10.21105/joss.01285/status.svg)](https://doi.org/10.21105/joss.01285)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=plastic)](https://github.com/MAHDLab/rIP/pulls)
 [![Documentation](https://img.shields.io/badge/documentation-rIP-orange.svg?colorB=E91E63)](https://www.r-pkg.org/pkg/rIP)
