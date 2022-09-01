@@ -16,7 +16,7 @@ See some related working papers [here](https://papers.ssrn.com/sol3/papers.cfm?a
 
 ### Code of Conduct
 
-Please review and abide by our contributor code of conduct if you'd like to contribute to the tool. Thanks! 
+Please review and abide by our [contributor code of conduct](https://github.com/MAHDLab/rIP/blob/master/CODE_OF_CONDUCT.md) if you'd like to contribute to the tool. Thanks! 
 
 ### Installation
 
