@@ -14,6 +14,10 @@ Especially important in this is the variable "block", which gives a score indica
 
 See some related working papers [here](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3272468) and [here](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3327274). And the R-Bloggers post is [here](https://www.r-bloggers.com/a-new-release-of-rip-v1-2-0-for-detecting-fraud-in-online-surveys/).
 
+### Code of Conduct
+
+Please review and abide by our contributor code of conduct if you'd like to contribute to the tool. Thanks! 
+
 ### Installation
 
 Users can install either the stable version released on [CRAN (v1.2.0)](https://CRAN.R-project.org/package=rIP):
